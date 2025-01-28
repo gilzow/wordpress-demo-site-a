@@ -12,7 +12,7 @@ describe("Search", ()=>{
 		})
 
 		it("Runs search from 404", ()=>{
-			cy.get("#search-form-1").type("Sample{enter}")
+			cy.get("#wp-block-search__input-2").type("Sample{enter}")
 			//cy.get('[aria-label="Search"]').click()
 			cy.location().should((loc)=>{
 				expect(loc.pathname).to.equal('/')
